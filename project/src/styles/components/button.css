@@ -1,0 +1,96 @@
+/* Button Component
+   ========================================================================== */
+
+/**
+ * Base button styles
+ * 1. Reset default button styles
+ * 2. Set up basic appearance
+ */
+
+.button {
+  /* [1] */
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  
+  /* [2] */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Variants */
+.button--primary {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.button--primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.button--secondary {
+  background-color: var(--secondary);
+  color: white;
+  border: 1px solid var(--secondary-dark);
+}
+
+.button--secondary:hover {
+  background-color: var(--secondary-dark);
+}
+
+.button--outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.button--outline:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.button--ghost {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
+}
+
+.button--ghost:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-medium);
+}
+
+/* States */
+.button--loading {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.button--small {
+  padding: var(--space-xs) var(--space-md);
+  font-size: var(--font-size-sm);
+}
+
+.button--large {
+  padding: var(--space-md) var(--space-xl);
+  font-size: var(--font-size-lg);
+} 

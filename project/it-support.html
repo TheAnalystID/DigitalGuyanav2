@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support and Automation Solutions - Digital Guyana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div>Call us: <a href="tel:+1234567890">+1 (234) 567-890</a></div>
+        <div>Email: <a href="mailto:support@digitalguyana.org">support@digitalguyana.org</a></div>
+        <div>Support: Mon to Fri, 8am - 4pm</div>
+    </div>
+    <nav>
+        <a href="index.html"><img src="https://clipground.com/images/transparent-png-logo-maker-online-free-6.png" alt="Digital Guyana Logo"></a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h2>IT Support and Automation Solutions</h2>
+        <p>Reliable Tech Support and Smarter Processes</p>
+    </div>
+
+    <div class="service-navigation">
+        <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+            <a href="data-analysis.html" class="nav-button">Previous: Data Analysis</a>
+            <a href="workforce-management.html" class="nav-button">Next: Workforce Management</a>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <label for="service-select">View Other Services:</label>
+            <select id="service-select" onchange="navigateToService(this.value)">
+                <option value="">Select a Service</option>
+                <option value="data-analysis.html">Data Analysis and Visualization</option>
+                <option value="it-support.html" selected>IT Support and Automation</option>
+                <option value="workforce-management.html">Workforce Management</option>
+                <option value="financial-planning.html">Financial Planning</option>
+                <option value="training-upskilling.html">Training and Upskilling</option>
+                <option value="business-administration.html">Business Administration</option>
+                <option value="process-improvement.html">Process Improvement</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="content">
+        <h3>Our Offerings</h3>
+        <p>We handle your tech needs and help you save time with automation, so you can focus on your business.</p>
+        <h3>Key Services</h3>
+        <ul>
+            <li><strong>Helpdesk Support:</strong> Quick and easy solutions to technical problems.</li>
+            <li><strong>System Maintenance:</strong> Keep your hardware and software running smoothly.</li>
+            <li><strong>Task Automation:</strong> Automate repetitive tasks with tools like Excel macros and simple scripts.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-section logo-motto">
+            <img src="https://clipground.com/images/transparent-png-logo-maker-online-free-6.png" alt="Digital Guyana Logo">
+            <p>We bridge the technology gap</p>
+        </div>
+        <div class="footer-section navigation-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-details">
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Email: <a href="mailto:support@digitalguyana.org">support@digitalguyana.org</a></p>
+            <p>Support: Mon to Fri, 8am - 4pm</p>
+        </div>
+        <div class="footer-section qr-code">
+            <img src="https://via.placeholder.com/100" alt="QR Code Placeholder">
+        </div>
+    </footer>
+
+    <script>
+        function navigateToService(url) {
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+</html>

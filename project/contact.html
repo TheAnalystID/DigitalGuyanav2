@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Digital Guyana</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #contact form {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #contact form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #contact form input, #contact form textarea, #contact form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            font-size: 1em;
+        }
+
+        #contact form textarea {
+            resize: vertical;
+        }
+
+        #contact form button {
+            background-color: #b22222;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto 0 auto;
+        }
+
+        #contact form button:hover {
+            background-color: #a30000;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-group > div {
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        .form-group > div.full-width {
+            flex: 1 1 100%;
+        }
+
+        .form-group input[type="submit"] {
+            flex: 1 1 100%;
+        }
+
+        @media (max-width: 768px) {
+            .form-group > div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div>Call us: <a href="tel:+1234567890">+1 (234) 567-890</a></div>
+        <div>Email: <a href="mailto:support@digitalguyana.org">support@digitalguyana.org</a></div>
+        <div>Support: Mon to Fri, 8am - 4pm</div>
+    </div>
+    <nav>
+        <a href="index.html"><img src="https://clipground.com/images/transparent-png-logo-maker-online-free-6.png" alt="Digital Guyana Logo"></a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h2>Contact Us</h2>
+        <p>We're here to help. Let us know how we can assist you.</p>
+    </div>
+
+    <section id="contact">
+        <form role="form" aria-label="Contact form" action="https://formspree.io/f/[YOUR_FORM_ID]" method="POST">
+            <div class="form-group">
+                <div>
+                    <label for="name" id="name-label">Full Name</label>
+                    <input type="text" id="name" name="name" aria-labelledby="name-label" aria-required="true" required>
+                </div>
+                <div>
+                    <label for="email" id="email-label">Email Address</label>
+                    <input type="email" id="email" name="email" aria-labelledby="email-label" aria-required="true" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="phone">Your Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+                <div>
+                    <label for="urgency">How urgent is this issue?</label>
+                    <select id="urgency" name="urgency">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <label for="issue" id="issue-label">What challenges are you facing?</label>
+                <textarea id="issue" name="issue" aria-labelledby="issue-label" placeholder="Describe the problem in detail" rows="4" required></textarea>
+            </div>
+            <div class="form-group full-width">
+                <label for="solution" id="solution-label">What kind of solution are you looking for?</label>
+                <textarea id="solution" name="solution" aria-labelledby="solution-label" placeholder="Describe the solution you have in mind" rows="4"></textarea>
+            </div>
+            <div class="form-group full-width">
+                <label for="team" id="team-label">Do you have a point of contact or team member for us to reach out to?</label>
+                <input type="text" id="team" name="team" aria-labelledby="team-label" placeholder="Provide the name and role">
+            </div>
+            <button type="submit" aria-label="Submit form">Submit</button>
+        </form>
+    </section>
+
+    <section id="infographics">
+        <img src="https://drive.google.com/uc?id=1PuVfG0HsKJZ2U7C1UfbVrb4eGERAhQ5Z" alt="Infographic">
+    </section>
+
+    <footer>
+        <div class="footer-section logo-motto">
+            <img src="https://clipground.com/images/transparent-png-logo-maker-online-free-6.png" alt="Digital Guyana Logo">
+            <p>We bridge the technology gap.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:support@digitalguyana.org">support@digitalguyana.org</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+        <div class="footer-section qr-code">
+            <img src="https://via.placeholder.com/100" alt="QR Code Placeholder">
+        </div>
+    </footer>
+</body>
+</html>

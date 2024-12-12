@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Guyana - Leading digital transformation services in Guyana. We offer IT support, business administration, data analysis, and workforce management solutions.">
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" 
+        content="
+            default-src 'self' https: http: data: blob: 'unsafe-inline' 'unsafe-eval';
+            script-src 'self' https: http: 'unsafe-inline' 'unsafe-eval';
+            style-src 'self' https: http: 'unsafe-inline';
+            img-src 'self' https: http: data: blob:;
+            font-src 'self' https: http: data:;
+            connect-src 'self' https: http:;
+            media-src 'self' https: http:;
+            frame-src 'self' https: http:;
+            object-src 'none';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="preload" href="/images/logo.webp" as="image" type="image/webp">
+    
+    <title>Digital Guyana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+      rel="preload" 
+      as="image" 
+      href="/images/logo.webp" 
+      type="image/webp"
+    >
+    <style>
+        .models-grid {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .model-card {
+            background: #f9f9f9;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+        }
+        .model-card img {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+        .model-card h4 {
+            font-size: 0.9em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div>Call us: <a href="tel:+1234567890">+1 (234) 567-890</a></div>
+        <div>Email: <a href="mailto:support@digitalguyana.org">support@digitalguyana.org</a></div>
+        <div>Support: Mon to Fri, 8am - 4pm</div>
+    </div>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav__brand" aria-label="Home">
+            <img src="/images/logo.webp" alt="Digital Guyana Logo">
+        </a>
+        <div class="nav__menu" role="menubar">
+            <a href="index.html" class="nav__item" role="menuitem" aria-current="page">Home</a>
+            <a href="services.html" class="nav__item" role="menuitem">Services</a>
+            <a href="about.html" class="nav__item" role="menuitem">About Us</a>
+            <a href="faq.html" class="nav__item" role="menuitem">FAQ</a>
+            <a href="contact.html" class="nav__item" role="menuitem">Contact</a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="hero">
+            <h2>Innovating the Future</h2>
+            <p>Providing cutting-edge solutions for climbing to greater heights.</p>
+            <a href="contact.html" class="cta-button">Get Started Today</a>
+        </div>
+
+        <section id="video-placeholder" class="video-section">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Video Placeholder" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                loading="lazy"
+            ></iframe>
+        </section>
+
+        <section id="services" class="services-section">
+            <h3>Our Services</h3>
+            <div class="cards">
+                <div class="card" onclick="location.href='data-analysis.html';">
+                    <h4>Data Analysis and Visualization</h4>
+                    <p>Make your data work for you with custom dashboards and clear visuals.</p>
+                </div>
+                <div class="card" onclick="location.href='it-support.html';">
+                    <h4>IT Support & Automation</h4>
+                    <p>Reliable tech support and automation solutions for smarter processes.</p>
+                </div>
+                <div class="card" onclick="location.href='workforce-management.html';">
+                    <h4>Workforce Management</h4>
+                    <p>Optimize staffing and scheduling for improved efficiency.</p>
+                </div>
+                <div class="card" onclick="location.href='financial-planning.html';">
+                    <h4>Financial Planning</h4>
+                    <p>Clear financial projections and budgeting to maximize profitability.</p>
+                </div>
+                <div class="card" onclick="location.href='training-upskilling.html';">
+                    <h4>Training & Upskilling</h4>
+                    <p>Build essential skills with accessible workshops and training.</p>
+                </div>
+                <div class="card" onclick="location.href='business-administration.html';">
+                    <h4>Business Administration</h4>
+                    <p>Focus on growth while we handle everyday business tasks.</p>
+                </div>
+                <div class="card" onclick="location.href='process-improvement.html';">
+                    <h4>Process Improvement</h4>
+                    <p>Streamline workflows and monitor in real-time for agility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose-us" class="centered-section">
+            <h3>Why Choose Our Services?</h3>
+            <p>Our team is dedicated to delivering tailored solutions that empower businesses to achieve their goals efficiently. Digital Guyana Analysts have collaborated with top companies in Guyana and internationally, leveraging their expertise in diverse roles to implement innovative services effectively.</p>
+            <p>We combine hands-on experience with innovative tools to provide results-driven strategies that make a real impact. From data-driven insights to seamless tech support, our services are designed to optimize operations and drive measurable success.</p>
+            <a href="contact.html" class="cta-button">Contact Us Now</a>
+        </section>
+
+        <section id="billing-models">
+            <div style="text-align: center;">
+                <h3>Our Billing Models</h3>
+            </div>
+            <p style="text-align: center;">We offer flexible billing models tailored to your business needs. Select the service you require, and we'll apply the best billing structure for your situation.</p>
+            <div class="models-grid">
+                <!-- Subscription Model -->
+                <div class="model-card">
+                    <img src="https://www.ubisecure.com/wp-content/uploads/2019/05/trustlei-subscription-1.png" alt="Subscription">
+                    <h4>Subscription-Based</h4>
+                </div>
+
+                <!-- Project-Based Model -->
+                <div class="model-card">
+                    <img src="https://library.ucf.edu/wp-content/uploads/sites/5/2015/03/SC-Project-Icon.png" alt="Project">
+                    <h4>Project-Based</h4>
+                </div>
+
+                <!-- Retainer Model -->
+                <div class="model-card">
+                    <img src="https://www.cloudways.com/blog/wp-content/uploads/Monthly-Retainer-Contract.jpg" alt="Retainer">
+                    <h4>Retainer</h4>
+                </div>
+
+                <!-- Value-Added Model -->
+                <div class="model-card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/016/462/208/original/request-timeout-illustration-concept-on-white-background-vector.jpg" alt="Value-Added">
+                    <h4>Value-Added</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="not-sure" class="centered-section">
+            <h3>Not Sure What You Need?</h3>
+            <p>Schedule a meeting with one of our experienced Analysts to discuss your business pain points and how Digital Guyana can help bridge the technology gap.</p>
+            <p>Our team is here to listen, analyze, and recommend the best solutions tailored to your unique needs.</p>
+            <a href="schedule.html" class="cta-button">Schedule a Meeting</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-section logo-motto">
+            <img src="/images/logo.webp" alt="Digital Guyana Logo" loading="lazy">
+            <p>We bridge the technology gap.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:support@digitalguyana.org">support@digitalguyana.org</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+        <div class="footer-section qr-code">
+            <img src="https://via.placeholder.com/100" alt="QR Code Placeholder" loading="lazy">
+        </div>
+    </footer>
+</body>
+</html> 

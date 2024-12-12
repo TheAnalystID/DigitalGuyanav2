@@ -1,0 +1,228 @@
+/**
+ * Digital Guyana Main Stylesheet
+ * 1. Core styles and variables
+ * 2. Components
+ * 3. Utilities
+ */
+
+/* Core */
+@import 'variables.css';
+@import 'reset.css';
+@import 'typography.css';
+
+/* Components */
+@import 'components/button.css';
+@import 'components/card.css';
+@import 'components/nav.css';
+@import 'components/form.css';
+@import 'components/hero.css';
+
+/* Utilities */
+@import 'utilities.css';
+@import 'animations.css';
+
+/**
+ * Global styles
+ * 1. Set up base page structure
+ * 2. Apply global modifiers
+ */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-sticky);
+}
+
+.page__main {
+  flex: 1;
+}
+
+.page__footer {
+  margin-top: auto;
+}
+
+/* Global modifiers */
+.is-hidden {
+  display: none !important;
+}
+
+.is-visible {
+  display: block !important;
+}
+
+/* Global Styles */
+body {
+  background: linear-gradient(to bottom right, var(--bg-primary), var(--bg-secondary));
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Navigation Styling */
+.nav {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__brand img {
+  height: 40px;
+  width: auto;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Top Bar Enhancement */
+.top-bar {
+  background: var(--primary-dark);
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.top-bar a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-dark) 0%,
+    var(--secondary-dark) 100%
+  );
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/pattern.svg') center/cover;
+  opacity: 0.1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Main Content Sections */
+section {
+  padding: 4rem 2rem;
+  background: var(--bg-card);
+  margin: 2rem 0;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.centered-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* Footer Enhancement */
+.footer {
+  background: linear-gradient(
+    to bottom,
+    var(--gray-800),
+    var(--gray-900)
+  );
+  color: white;
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer a {
+  color: var(--gray-300);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Decorative Elements */
+.gradient-border {
+  position: relative;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    60deg,
+    var(--primary) 0%,
+    var(--secondary) 50%,
+    var(--accent) 100%
+  );
+  padding: 1px;
+}
+
+.gradient-border > * {
+  background: var(--bg-card);
+  border-radius: inherit;
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    padding: 1rem;
+  }
+  
+  .hero {
+    padding: 4rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+  }
+}

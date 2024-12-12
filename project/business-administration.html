@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Administration Support - Digital Guyana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div>Call us: <a href="tel:+1234567890">+1 (234) 567-890</a></div>
+        <div>Email: <a href="mailto:support@digitalguyana.org">support@digitalguyana.org</a></div>
+        <div>Support: Mon to Fri, 8am - 4pm</div>
+    </div>
+    <nav>
+        <a href="index.html"><img src="https://clipground.com/images/transparent-png-logo-maker-online-free-6.png" alt="Digital Guyana Logo"></a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h2>Business Administration Support</h2>
+        <p>Focus on Growth, Leave the Rest to Us</p>
+    </div>
+
+    <div class="service-navigation">
+        <div style="display: flex; justify-content: space-between; margin: 20px 0;">
+            <a href="training-upskilling.html" class="nav-button">Previous: Training and Upskilling</a>
+            <a href="process-improvement.html" class="nav-button">Next: Process Improvement</a>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <label for="service-select">View Other Services:</label>
+            <select id="service-select" onchange="navigateToService(this.value)">
+                <option value="">Select a Service</option>
+                <option value="data-analysis.html">Data Analysis and Visualization</option>
+                <option value="it-support.html">IT Support and Automation</option>
+                <option value="workforce-management.html">Workforce Management</option>
+                <option value="financial-planning.html">Financial Planning</option>
+                <option value="training-upskilling.html">Training and Upskilling</option>
+                <option value="business-administration.html" selected>Business Administration</option>
+                <option value="process-improvement.html">Process Improvement</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="content">
+        <h3>Our Offerings</h3>
+        <p>We handle everyday business tasks so you can concentrate on what matters most.</p>
+        <h3>Key Services</h3>
+        <ul>
+            <li><strong>Data Management:</strong> Accurate data entry, cleanup, and organization.</li>
+            <li><strong>Email and Chat Support:</strong> Friendly and professional communication for your team or customers.</li>
+            <li><strong>Report Preparation:</strong> Simplify basic reporting and document management.</li>
+        </ul>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="contact.html" class="cta-button" onclick="setServiceInContact('Business Administration Support')">Contact Us</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section logo-motto">
+            <img src="https://clipground.com/images/transparent-png-logo-maker-online-free-6.png" alt="Digital Guyana Logo">
+            <p>We bridge the technology gap</p>
+        </div>
+        <div class="footer-section navigation-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-details">
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Email: <a href="mailto:support@digitalguyana.org">support@digitalguyana.org</a></p>
+            <p>Support: Mon to Fri, 8am - 4pm</p>
+        </div>
+        <div class="footer-section qr-code">
+            <img src="https://via.placeholder.com/100" alt="QR Code Placeholder">
+        </div>
+    </footer>
+
+    <script>
+        function navigateToService(url) {
+            if (url) {
+                window.location.href = url;
+            }
+        }
+
+        function setServiceInContact(serviceName) {
+            localStorage.setItem('selectedService', serviceName);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const additionalInfoField = document.querySelector('#additional-info');
+            const serviceName = localStorage.getItem('selectedService');
+
+            if (additionalInfoField && serviceName) {
+                additionalInfoField.value = `Service: ${serviceName}`;
+                localStorage.removeItem('selectedService');
+            }
+        });
+    </script>
+</body>
+</html>
